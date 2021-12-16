@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 8</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <h1 id="namaMotor"></h1>
+    <button id="printGambarMotor" onclick="tampilkanGambar()"></button>
+    <div id="tempatGambarMotor"></div>
+
+    <!-------------------------------------------------------->
+
+    <button id="tin" onclick="klakson()"></button>
+    <p id="bunyiKlakson">.........</p>
+    
+    <script>
+
+        document.getElementById('namaMotor').innerText = 'Beat';
+        document.getElementById('printGambarMotor').innerText = 'Print Gambar Motor';
+
+       
+         function tampilkanGambar() {
+            document.getElementById('tempatGambarMotor').innerHTML = '<img src="https://cdn.statically.io/img/i1.wp.com/indomoto.com/wp-content/uploads/2014/05/honda-beat-fi-2014.jpg?resize=500%2C333&ssl=1">';
+         }
+        
+
+        //::::::::::::::::::::::::::::::::::::::::::::::::::
+
+        document.getElementById('tin').innerText = 'Klakson';
+
+        function klakson() {
+            document.getElementById('bunyiKlakson').innerText = 'tin tin tin';
+        }
+
+        //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+        //::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+        //function memiliki  beberapa tahapan deklarsi, isi, tampilkan,
+
+        //tampilkanGambar(); //untuk menampilkan function
+
+        //console.log('Hello World'); //cetak console browser
+        
+        //window.alert('Hello World'); //pop up
+        
+        //document.write('Hello World'); //nulis di website kita
+        
+        //document.getElementById('namamotor').innerHTML ='<div>Hello World</div>'; //umtuk mencetak bersama dengan tag html dan gambar
+        
+        //document.getElementById('namamotor').innerText ='Hello World'; //hanya untuk mencetak text (kalau ada tag html akan dianggap sebagai text)
+
+        //let hello = 'Hello World'; //variabel (busa di re-install)
+
+        //document.write(hello); //untuk mencetak/print
+
+        //const hello1 = 'Hello World'; //tidak bisa si re-install
+
+        //document.write(hello1);
+
+    </script>
+
+</body>
+</html>
